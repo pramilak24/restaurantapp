@@ -1,0 +1,575 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* General styles */
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #3d2c20; /* Dark Brownish Gray */
+  background-color: #fef8f2; /* Light Cream */
+  margin: 0;
+  padding: 0;
+}
+
+.kitchen-container {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.orders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.order-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+.order-table {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.order-items {
+  list-style: none;
+  padding: 0;
+}
+
+.order-item {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.close-button {
+  background-color:#8e5734;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-button:hover {
+  background-color: #714427;
+}
+
+/* styles.css */
+
+.register-container, .login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif; /* Ensure consistency */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button.register-button, button.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8e5734;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button.register-button:hover, button.login-button:hover {
+  background-color: #714427;
+  
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #8e5734;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #714427;
+}
+
+.page-title {
+  text-align: center;
+  color: #444;
+  margin-top: 20px;
+}
+
+/* Tables page styles */
+.tables-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.table-container {
+  text-align: center;
+}
+
+.table-image {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid green;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.table-image.table-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: red;
+}
+
+.table-label {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.orders-list {
+  margin-top: 20px;
+}
+
+.orders-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-list th, .orders-list td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.orders-list button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #8e5734;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orders-list button:hover {
+  background-color: #714427;
+}
+
+.reservations-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.reservations-list th,
+.reservations-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+/* Container styling */
+.reservation-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.reservation-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Card styling */
+.reservation-card {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Form label */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Form control styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #8e5734;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #714427;
+}
+
+/* Message styles */
+.message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+.message.error {
+  color: #dc3545;
+}
+.table-container.selected {
+  border: 2px solid #4caf50;
+  box-shadow: 0 0 10px #4caf50;
+}
+
+.table-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Menu page styles */
+.menu-content {
+  display: flex; /* Enables side-by-side layout */
+  gap: 20px; /* Adds space between menu items and order summary */
+}
+.menu-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-items {
+  flex: 5; /* Takes up more space */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.order-summary {
+  flex: 4; /* Takes up less space */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.menu-item, .order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #555;
+}
+
+.add-button, .remove-button, .submit-button, .new-order-button {
+  background-color: #8e5734;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover, .remove-button:hover, .submit-button:hover, .new-order-button:hover {
+  background-color: #714427;
+}
+
+/* Kitchen page styles */
+.kitchen-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.orders-list {
+  margin-top: 20px;
+}
+
+.order-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.order-table {
+  font-weight: bold;
+  color: #444;
+}
+
+.order-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.close-button {
+  background-color: #8e5734;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #714427;
+}
+
+/* Order confirmation message */
+.order-confirmation {
+  text-align: center;
+}
+
+.confirmation-title {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.confirmation-message {
+  color: #555;
+  margin-bottom: 20px;
+}
+.billing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.bill-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.restaurant-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bill-header {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.bill-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.bill-details th,
+.bill-details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.bill-details th {
+  background-color: #f4f4f4;
+}
+
+.total-amount {
+  font-size: 18px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.thank-you {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.print-bill-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #8e5734;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px; /* Optional: Adds a subtle rounded corner */
+  text-align: center; /* Center-aligns the text */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.print-bill-btn:hover {
+  background-color: #714427;
+}

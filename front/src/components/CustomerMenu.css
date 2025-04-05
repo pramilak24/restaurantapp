@@ -1,0 +1,116 @@
+/* Container Styling */
+.menu-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Georgia', serif;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+    border-bottom: 4px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  /* Menu Header */
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .menu-header-item {
+    text-align: left;
+    margin-left: 120px;
+    flex: 2;
+  }
+  
+  .menu-header-price {
+    text-align: right;
+    margin-right: 10%;
+    flex: 1;
+  }
+  
+  /* Menu Items */
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items at the top */
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  .item-info {
+    flex: 2; /* Takes up more space */
+  }
+  
+  .item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .item-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0; /* Remove any extra spacing */
+  }
+  
+  .item-price {
+    flex: 1; /* Takes less space */
+    text-align: right;
+    margin-right: 10%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1a0114;
+  }
+  
+  
+  /* Add hover effect to menu items */
+  .menu-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-title {
+      font-size: 2rem;
+    }
+  
+    .menu-header, .item-row {
+      font-size: 1rem;
+    }
+  
+    .item-description {
+      font-size: 0.9rem;
+    }
+  }
+  .menu-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
